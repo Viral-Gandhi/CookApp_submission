@@ -2,4 +2,6 @@
     <string name="app_name">CookApp_RecipeSelect</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_recipe_one">RecipeOne</string>
+    <string name="title_activity_welcome_screen">Welcome</string>
+    <string name="title_activity_cuisine_select">Cuisine Select</string>
 </resources>

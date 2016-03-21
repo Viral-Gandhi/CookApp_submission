@@ -36,8 +36,23 @@ public class RecipeSelect extends AppCompatActivity {
         *It requires the button to be bale to find the correct ID from the set of IDs available in
         *the .XML file for this Activity, where styles etc can be applied. This links the current
         *activity with the appropriate recipe's activity.*/
+        final int NO_BUTTONS=12;
+        Button[] btns = new Button[NO_BUTTONS];
+        btns[0] = (Button) findViewById(R.id.Rec1);
+        btns[1] = (Button) findViewById(R.id.Rec2);
+        btns[2] = (Button) findViewById(R.id.Rec3);
+        btns[3] = (Button) findViewById(R.id.Rec4);
+        btns[4] = (Button) findViewById(R.id.Rec5);
+        btns[5] = (Button) findViewById(R.id.Rec6);
+        btns[6] = (Button) findViewById(R.id.Rec7);
+        btns[7] = (Button) findViewById(R.id.Rec8);
+        btns[8] = (Button) findViewById(R.id.Rec9);
+        btns[9] = (Button) findViewById(R.id.Rec10);
+        btns[10] = (Button) findViewById(R.id.Rec11);
+        btns[11] = (Button) findViewById(R.id.Rec12);
 
-        Button Recipe1 = (Button) findViewById(R.id.Rec1);
+
+        Button Recipe1 = btns[0];
         Recipe1.setOnClickListener(new View.OnClickListener() {
 
 
