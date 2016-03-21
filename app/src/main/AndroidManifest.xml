@@ -8,9 +8,10 @@
         android:label="Cooking Up Something Special"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".RecipeSelect"
-            android:label="@string/app_name"
+            android:label="Recipe Selection"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +31,7 @@
             android:name=".RecipeOne"
             android:label="Pudding"
             android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>
