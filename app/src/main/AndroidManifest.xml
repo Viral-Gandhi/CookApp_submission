@@ -8,10 +8,9 @@
         android:label="Cooking Up Something Special"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
-            android:name=".RecipeSelect"
-            android:label="Recipe Selection"
+            android:name=".Welcome"
+            android:label="Welcome"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +18,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FindMethod"
+            android:label="@string/title_activity_find_method"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchRecipes"
+            android:label="@string/title_activity_search_recipes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CuisineFind"
+            android:label="@string/title_activity_cuisine_find"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RecipeSelect"
+            android:label="Recipe Selection"
+            android:theme="@style/AppTheme.NoActionBar" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.

@@ -5,4 +5,8 @@
     <string name="title_activity_welcome_screen">Welcome</string>
     <string name="title_activity_cuisine_select">Cuisine Select</string>
     <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_find_method">Search Method</string>
+    <string name="title_activity_cuisine_choose">Cuisine Select</string>
+    <string name="title_activity_cuisine_find">CuisineFind</string>
+    <string name="title_activity_search_recipes">Search Recipes</string>
 </resources>
