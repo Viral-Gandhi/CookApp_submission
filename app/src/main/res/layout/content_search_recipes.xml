@@ -26,5 +26,8 @@
         android:id="@+id/listViewSearchRec"
         android:layout_below="@+id/searchViewSearchRec"
         android:layout_alignParentStart="true"
-        android:scrollIndicators="right" />
+        android:scrollIndicators="right" >
+
+    </ListView>
+
 </RelativeLayout>
