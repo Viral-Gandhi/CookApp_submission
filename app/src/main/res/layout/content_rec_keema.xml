@@ -24,10 +24,9 @@
 
     <ListView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:id="@+id/listViewKeema"
         android:layout_below="@+id/textViewKeemaTitle"
-        android:layout_above="@+id/textViewKeema1"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/imageViewKeema" />
 
@@ -35,10 +34,32 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:id="@+id/imageViewKeema"
-        android:layout_alignTop="@+id/listView"
+        android:layout_alignTop="@+id/listViewKeema"
         android:layout_alignParentEnd="true"
         android:src="@drawable/keema"
         android:paddingStart="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Method:"
+        android:id="@+id/textViewKeemaMethod"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/imageViewKeema"
+        android:textSize="20sp" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/textViewKeemaMethod">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,5 +69,67 @@
         android:id="@+id/textViewKeema1"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
-        android:paddingTop="10dp" />
+        android:paddingTop="5dp"
+        android:layout_below="@+id/textViewKeemaMethod"
+        android:textSize="12sp"></TextView>
+
+    <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textAppearance="?android:attr/textAppearanceMedium"
+android:text="Step 2: When onions are soft add the mince meat and cook removing any excess fat."
+android:id="@+id/textViewKeema2"
+android:paddingTop="10dp"
+
+android:textSize="12sp" />
+
+    <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textAppearance="?android:attr/textAppearanceMedium"
+android:text="Step 3: Once the meat is reduced add all the curry and chilli powder stirring it in and scratching the bottom of the pan with a wooden spoon to prevent the spices from burning. Repeat this for 5 minutes."
+android:id="@+id/textViewKeema3"
+android:paddingTop="10dp"
+android:layout_below="@+id/textViewKeema2"
+android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Step 4: Add tinned tomatoes, chickpeas and any additional water then simmer for 40 minutes."
+        android:id="@+id/textViewKeema4"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Step 5: 5 minutes before the end of the simmering time add all the spinach and mushrooms."
+        android:id="@+id/textViewKeema5"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Step 6: Serve on a bed of rice with naan bread of choice."
+        android:id="@+id/textViewKeema6"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+
+        android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>
 </RelativeLayout>

@@ -26,17 +26,18 @@ public class RecKeema extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        String[] KeemaIng = new String[10];
-        KeemaIng[0] ="2 tbsp Oil";
-        KeemaIng[1] ="2 large onion";
-        KeemaIng[2] ="3 Cloves of garlic";
-        KeemaIng[3] ="3 Chilli";
-        KeemaIng[4] ="500g lamb mince";
-        KeemaIng[5] ="2 tbsp Curry powder";
-        KeemaIng[6] ="1tbsp of Chilli powder";
-        KeemaIng[7] ="400g Chickpeas";
-        KeemaIng[8] ="Chopped Tomatoes";
-        KeemaIng[9] ="200g Spinach";
+        String[] KeemaIng = new String[11];
+        KeemaIng[0]="Ingredients";
+        KeemaIng[1] ="2 tbsp Oil";
+        KeemaIng[2] ="2 large onion";
+        KeemaIng[3] ="3 Cloves of garlic";
+        KeemaIng[4] ="3 Chilli";
+        KeemaIng[5] ="500g lamb mince";
+        KeemaIng[6] ="2 tbsp Curry powder";
+        KeemaIng[7] ="1tbsp of Chilli powder";
+        KeemaIng[8] ="400g Chickpeas";
+        KeemaIng[9] ="Chopped Tomatoes";
+        KeemaIng[10] ="200g Spinach";
 
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.listviewrecsearchlayout, KeemaIng);
