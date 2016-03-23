@@ -21,7 +21,7 @@ public class SearchRecipes extends AppCompatActivity {
 
         String[] AllRecipes = new String[3];
         AllRecipes[0] = "Keema";
-        AllRecipes[1] = "Curry";
+        AllRecipes[1] = "Chicken Curry";
         AllRecipes[2] = "Falafel";
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.listviewrecsearchlayout, AllRecipes);
@@ -54,8 +54,8 @@ public class SearchRecipes extends AppCompatActivity {
                 startActivity(openKeema);
             }
             else if (position == 1) {
-                Intent openKorma = new Intent(SearchRecipes.this, CuisineFind.class);
-                startActivity(openKorma);
+                Intent openCurry = new Intent(SearchRecipes.this, RecCurry.class);
+                startActivity(openCurry);
             }
         }
     }

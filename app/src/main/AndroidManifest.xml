@@ -45,7 +45,13 @@
         <activity
             android:name=".RecKeema"
             android:label="@string/title_activity_rec_keema"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".RecCurry"
+            android:label="@string/title_activity_rec_curry"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"></activity>
     </application>
 
 </manifest>

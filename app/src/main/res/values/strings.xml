@@ -11,4 +11,5 @@
     <string name="title_activity_search_recipes">Search Recipes</string>
     <string name="title_activity_keema_recipe">Keema Recipe</string>
     <string name="title_activity_rec_keema">Keema Recipe</string>
+    <string name="title_activity_rec_curry">Curry Recipe</string>
 </resources>

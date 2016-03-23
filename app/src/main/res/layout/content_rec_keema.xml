@@ -70,7 +70,7 @@
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
         android:paddingTop="5dp"
-        android:layout_below="@+id/textViewKeemaMethod"
+
         android:textSize="12sp"></TextView>
 
     <TextView
@@ -78,7 +78,7 @@ android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:textAppearance="?android:attr/textAppearanceMedium"
 android:text="Step 2: When onions are soft add the mince meat and cook removing any excess fat."
-android:id="@+id/textViewKeema2"
+android:id="@+id/textViewCurry2"
 android:paddingTop="10dp"
 
 android:textSize="12sp" />
@@ -90,7 +90,7 @@ android:textAppearance="?android:attr/textAppearanceMedium"
 android:text="Step 3: Once the meat is reduced add all the curry and chilli powder stirring it in and scratching the bottom of the pan with a wooden spoon to prevent the spices from burning. Repeat this for 5 minutes."
 android:id="@+id/textViewKeema3"
 android:paddingTop="10dp"
-android:layout_below="@+id/textViewKeema2"
+
 android:textSize="12sp" />
 
     <TextView
@@ -99,8 +99,6 @@ android:textSize="12sp" />
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Step 4: Add tinned tomatoes, chickpeas and any additional water then simmer for 40 minutes."
         android:id="@+id/textViewKeema4"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
         android:paddingTop="10dp"
 
         android:textSize="12sp" />
@@ -123,8 +121,6 @@ android:textSize="12sp" />
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Step 6: Serve on a bed of rice with naan bread of choice."
         android:id="@+id/textViewKeema6"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
         android:paddingTop="10dp"
 
         android:textSize="12sp" />

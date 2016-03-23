@@ -1,5 +1,6 @@
 package com.example.viral.cookapp_recipeselect;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -34,5 +35,8 @@ public class RecKeema extends AppCompatActivity {
         KeemaList.setAdapter(adapter);
 
     }
-
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+    }
 }

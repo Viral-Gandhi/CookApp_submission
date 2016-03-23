@@ -60,7 +60,7 @@ public class RecipeSelect extends AppCompatActivity {
 
 
             public void onClick(View view) {
-                Intent openRecipeTwo = new Intent(RecipeSelect.this, RecKeema.class );
+                Intent openRecipeTwo = new Intent(RecipeSelect.this, RecCurry.class );
                 startActivity(openRecipeTwo);
             }
         });
