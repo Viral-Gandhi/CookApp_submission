@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.viral.cookapp_recipeselect.RecKeema"
+    tools:showIn="@layout/activity_rec_keema">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Keema"
+        android:id="@+id/textViewKeemaTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewKeema"
+        android:layout_below="@+id/textViewKeemaTitle"
+        android:layout_above="@+id/textViewKeema1"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/imageViewKeema" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageViewKeema"
+        android:layout_alignTop="@+id/listView"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/keema"
+        android:paddingStart="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Step 1: Warm a large pan on a medium heat and add 2 tbsp oil. When the oil is hot, fry the onions, garlic and chillies. When the onions are soft add the mince meat. After 5 minutes add the curry powder and chilli powder Make sure to chip away at the bottom of the pan to prevent the spices from sticking and burning."
+        android:id="@+id/textViewKeema1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp" />
+</RelativeLayout>

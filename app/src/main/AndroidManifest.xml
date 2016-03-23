@@ -43,10 +43,9 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".RecipeOne"
-            android:label="Pudding"
-            android:theme="@style/AppTheme.NoActionBar" />
-
+            android:name=".RecKeema"
+            android:label="@string/title_activity_rec_keema"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
