@@ -12,4 +12,5 @@
     <string name="title_activity_keema_recipe">Keema Recipe</string>
     <string name="title_activity_rec_keema">Keema Recipe</string>
     <string name="title_activity_rec_curry">Curry Recipe</string>
+    <string name="title_activity_rec_falafel">Falafel Recipe</string>
 </resources>

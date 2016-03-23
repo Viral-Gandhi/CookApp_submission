@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="true"
+        android:configChanges="orientation|screenSize"
         android:icon="@mipmap/ic_launcher"
         android:label="Cooking Up Something Special"
         android:supportsRtl="true"
@@ -45,13 +46,15 @@
         <activity
             android:name=".RecKeema"
             android:label="@string/title_activity_rec_keema"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="orientation|screenSize"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".RecCurry"
             android:label="@string/title_activity_rec_curry"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="orientation|screenSize"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RecFalafel"
+            android:label="@string/title_activity_rec_falafel"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
