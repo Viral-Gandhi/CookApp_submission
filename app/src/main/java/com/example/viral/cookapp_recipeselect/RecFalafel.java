@@ -1,11 +1,11 @@
 package com.example.viral.cookapp_recipeselect;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class RecFalafel extends AppCompatActivity {
 
@@ -16,14 +16,26 @@ public class RecFalafel extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-    }
+        String[] FalafelIng = new String[10];
+        FalafelIng[0]="Ingredients";
+        FalafelIng[1] ="One white onion ";
+        FalafelIng[2] ="2 garlic cloves ";
+        FalafelIng[3] ="1 chillies ";
+        FalafelIng[4] ="800g Chickpeas ";
+        FalafelIng[5] ="3 tbsp cumin";
+        FalafelIng[6] ="1 tbsp coriander";
+        FalafelIng[7] ="2 tbsp vegetable oil";
+        FalafelIng[8] ="1 egg";
+        FalafelIng[9] ="Plain flour";
 
+
+        final ArrayAdapter<String> adapterFalafel = new ArrayAdapter<String>(this, R.layout.listviewrecsearchlayout, FalafelIng);
+        ListView FalafelList = (ListView) findViewById(R.id.listViewFalafel);
+        FalafelList.setAdapter(adapterFalafel);
+
+    }
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+    }
 }

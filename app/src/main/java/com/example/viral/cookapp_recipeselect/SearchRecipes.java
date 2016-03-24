@@ -20,9 +20,9 @@ public class SearchRecipes extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         String[] AllRecipes = new String[3];
-        AllRecipes[0] = "Keema";
+        AllRecipes[2] = "Keema";
         AllRecipes[1] = "Chicken Curry";
-        AllRecipes[2] = "Falafel";
+        AllRecipes[0] = "Falafel";
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.listviewrecsearchlayout, AllRecipes);
         ListView listRecs = (ListView) findViewById(R.id.listViewSearchRec);
@@ -49,7 +49,7 @@ public class SearchRecipes extends AppCompatActivity {
 
     public class openIntents implements AdapterView.OnItemClickListener{
         public void onItemClick(AdapterView<?> parent, View viewClicked, int position, long id) {
-            if(position==0){
+            if(position==2){
                 Intent openKeema = new Intent(SearchRecipes.this, RecKeema.class);
                 startActivity(openKeema);
             }
@@ -57,7 +57,11 @@ public class SearchRecipes extends AppCompatActivity {
                 Intent openCurry = new Intent(SearchRecipes.this, RecCurry.class);
                 startActivity(openCurry);
             }
-        }
+            else if (position == 0) {
+                Intent openRecipeThree = new Intent(SearchRecipes.this, RecFalafel.class );
+                startActivity(openRecipeThree);
+            }
+       }
     }
 
 

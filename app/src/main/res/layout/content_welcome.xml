@@ -37,6 +37,6 @@
         android:clickable="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="175dp"
+        android:layout_marginBottom="100dp"
         android:layout_alignParentEnd="true" />
 </RelativeLayout>

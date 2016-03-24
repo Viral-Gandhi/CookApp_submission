@@ -11,5 +11,118 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.viral.cookapp_recipeselect.RecFalafel"
     tools:showIn="@layout/activity_rec_falafel">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Falafel"
+        android:id="@+id/textViewFalafelTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center" />
 
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/listViewFalafel"
+        android:layout_below="@+id/textViewFalafelTitle"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/imageViewFalafel" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageViewFalafel"
+        android:layout_alignTop="@+id/listViewFalafel"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/falafel"
+        android:paddingStart="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Method:"
+        android:id="@+id/textViewFalafelMethod"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/imageViewFalafel"
+        android:textSize="20sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewFalafelMethod">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Step 1: Warm a large pan on a medium heat and add 2 tbsp oil. When the oil is hot, fry the onions, garlic and chillies. When the onions are soft add half the cumin and coriander and fry on a low heat. Make sure to chip away at the bottom of the pan to prevent the spices from sticking and burning."
+                android:id="@+id/textViewFalafel1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="5dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Step 2: Drain the chickpeas and wash with cold water. When the chickpeas stop frothing pour them into a large mixing bowl and mash with a fork or potato masher. You are aiming for a mushy consistency."
+                android:id="@+id/textViewFalafel2"
+                android:paddingTop="10dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Step 3: Once the chickpeas are fully mashed add the fried ingredients and additional leftover spices to the mix and stir with a wooden spoon until the ingredients are fully mixed."
+                android:id="@+id/textViewFalafel3"
+                android:paddingTop="10dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Step 4: Whisk one egg in a small bowl and then add and stir into the mixture. If you notice the mixture is very wet, stir in flour to absorb the moisture."
+                android:id="@+id/textViewFalafel4"
+                android:paddingTop="10dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Step 5: Warm a large pan on a medium heat and add the remaining oil. Using your hands remove 2 tbsps of the falafel mixture and roll into a ball shape. Repeat until all the mixture has been used."
+                android:id="@+id/textViewFalafel5"
+                android:paddingTop="10dp"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="“Step 6: Fry the falafel balls one by one in the oil giving 120 seconds of cooking time on each side. If the ball starts to blacken remove the pan from the heat until the oil has reduced in heat."
+                android:id="@+id/textViewFalafel6"
+                android:paddingTop="10dp"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Step 7: Serve Falafels on their own with humus or in a wrap with three falafel balls, lettuce, tomato, peppers, hummus and chillies."
+                android:id="@+id/textViewFalafel7"
+                android:paddingTop="10dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </ScrollView>
 </RelativeLayout>

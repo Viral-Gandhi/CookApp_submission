@@ -30,9 +30,9 @@ public class RecKeema extends AppCompatActivity {
         KeemaIng[10] ="200g Spinach";
 
 
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.listviewrecsearchlayout, KeemaIng);
+        final ArrayAdapter<String> adapterKeema = new ArrayAdapter<String>(this, R.layout.listviewrecsearchlayout, KeemaIng);
         ListView KeemaList = (ListView) findViewById(R.id.listViewKeema);
-        KeemaList.setAdapter(adapter);
+        KeemaList.setAdapter(adapterKeema);
 
     }
     @Override

@@ -70,7 +70,7 @@ public class RecipeSelect extends AppCompatActivity {
 
 
             public void onClick(View view) {
-                Intent openRecipeThree = new Intent(RecipeSelect.this, RecKeema.class );
+                Intent openRecipeThree = new Intent(RecipeSelect.this, RecFalafel.class );
                 startActivity(openRecipeThree);
             }
         });
