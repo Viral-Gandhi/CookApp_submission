@@ -13,16 +13,16 @@ import android.widget.SearchView;
 public class SearchRecipes extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_recipes);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         String[] AllRecipes = new String[3];
-        AllRecipes[2] = "Keema";
-        AllRecipes[1] = "Chicken Curry";
         AllRecipes[0] = "Falafel";
+        AllRecipes[1] = "Chicken Curry";
+        AllRecipes[2] = "Keema";
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.listviewrecsearchlayout, AllRecipes);
         ListView listRecs = (ListView) findViewById(R.id.listViewSearchRec);
@@ -34,36 +34,51 @@ public class SearchRecipes extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextSubmit(String RecSearched) {
-            return false;
+                return false;
             }
 
             @Override
             public boolean onQueryTextChange(String RecSearched) {
 
-                    adapter.getFilter().filter(RecSearched);
+                if (RecSearched == "Falafel" || RecSearched == "falafel") {
+                    Intent openFalafel = new Intent(SearchRecipes.this, RecFalafel.class);
+                    startActivity(openFalafel);
+                }
+                else if (RecSearched == "Chicken" || RecSearched == "Curry") {
+                    Intent openCurry = new Intent(SearchRecipes.this, RecCurry.class);
+                    startActivity(openCurry);
+                }
+                else if (RecSearched == "chicken" || RecSearched == "curry") {
+                    Intent openCurry = new Intent(SearchRecipes.this, RecCurry.class);
+                    startActivity(openCurry);
+                }
+                else if (RecSearched == "Keema" || RecSearched == "keema") {
+                    Intent openKeema = new Intent(SearchRecipes.this, RecKeema.class);
+                    startActivity(openKeema);
+                }
 
+                adapter.getFilter().filter(RecSearched);
                 return false;
             }
         });
     }
 
     public class openIntents implements AdapterView.OnItemClickListener{
+
         public void onItemClick(AdapterView<?> parent, View viewClicked, int position, long id) {
-            if(position==2){
-                Intent openKeema = new Intent(SearchRecipes.this, RecKeema.class);
-                startActivity(openKeema);
+            Intent openFalafel = new Intent(SearchRecipes.this, RecFalafel.class );
+            Intent openCurry = new Intent(SearchRecipes.this, RecCurry.class);
+            Intent openKeema = new Intent(SearchRecipes.this, RecKeema.class);
+
+            if (id == 0 ) {
+                startActivity(openFalafel);
             }
-            else if (position == 1) {
-                Intent openCurry = new Intent(SearchRecipes.this, RecCurry.class);
+            else if (id == 1) {
                 startActivity(openCurry);
             }
-            else if (position == 0) {
-                Intent openRecipeThree = new Intent(SearchRecipes.this, RecFalafel.class );
-                startActivity(openRecipeThree);
+            else if(id == 2){
+                startActivity(openKeema);
             }
        }
     }
-
-
-
 }
