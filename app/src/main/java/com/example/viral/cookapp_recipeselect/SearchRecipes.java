@@ -9,8 +9,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 public class SearchRecipes extends AppCompatActivity {
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,43 +42,36 @@ public class SearchRecipes extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String RecSearched) {
 
-                if (RecSearched == "Falafel" || RecSearched == "falafel") {
-                    Intent openFalafel = new Intent(SearchRecipes.this, RecFalafel.class);
-                    startActivity(openFalafel);
-                }
-                else if (RecSearched == "Chicken" || RecSearched == "Curry") {
-                    Intent openCurry = new Intent(SearchRecipes.this, RecCurry.class);
-                    startActivity(openCurry);
-                }
-                else if (RecSearched == "chicken" || RecSearched == "curry") {
-                    Intent openCurry = new Intent(SearchRecipes.this, RecCurry.class);
-                    startActivity(openCurry);
-                }
-                else if (RecSearched == "Keema" || RecSearched == "keema") {
-                    Intent openKeema = new Intent(SearchRecipes.this, RecKeema.class);
-                    startActivity(openKeema);
-                }
-
                 adapter.getFilter().filter(RecSearched);
                 return false;
             }
+
         });
+
     }
 
     public class openIntents implements AdapterView.OnItemClickListener{
 
-        public void onItemClick(AdapterView<?> parent, View viewClicked, int position, long id) {
-            Intent openFalafel = new Intent(SearchRecipes.this, RecFalafel.class );
-            Intent openCurry = new Intent(SearchRecipes.this, RecCurry.class);
-            Intent openKeema = new Intent(SearchRecipes.this, RecKeema.class);
+        Intent openFalafel;
+        Intent openCurry;
+        Intent openKeema;
 
-            if (id == 0 ) {
+        public void onItemClick(AdapterView<?> parent, View viewClicked, int position, long id) {
+            openFalafel = new Intent(SearchRecipes.this, RecFalafel.class );
+            openCurry = new Intent(SearchRecipes.this, RecCurry.class);
+            openKeema = new Intent(SearchRecipes.this, RecKeema.class);
+
+            TextView clicked = (TextView) viewClicked;
+
+            if(clicked.getText().toString() == "Falafel") {
                 startActivity(openFalafel);
             }
-            else if (id == 1) {
+
+            if(clicked.getText().toString() == "Chicken Curry") {
                 startActivity(openCurry);
             }
-            else if(id == 2){
+
+            if(clicked.getText().toString() == "Keema") {
                 startActivity(openKeema);
             }
        }
